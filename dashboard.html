@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WCMatrimony Dashboard</title>
+</head>
+<body>
+
+    <h1>Welcome to WCMatrimony</h1>
+    <p>You are logged in.</p>
+
+    <button id="logoutBtn">Logout</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+
+    <script>
+        async function checkUser() {
+            const { data } = await supabaseClient.auth.getUser();
+
+            if (!data.user) {
+                window.location.href = "login.html";
+            }
+        }
+
+        checkUser();
+
+        document.getElementById("logoutBtn").addEventListener("click", async () => {
+            await supabaseClient.auth.signOut();
+            window.location.href = "login.html";
+        });
+    </script>
+
+</body>
+</html>
