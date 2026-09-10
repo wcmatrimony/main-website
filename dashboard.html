@@ -2,34 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WCMatrimony Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - WCMatrimony</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <h1>Welcome to WCMatrimony</h1>
-    <p>You are logged in.</p>
+<h1>Complete Your Profile</h1>
 
-    <button id="logoutBtn">Logout</button>
+<form id="profileForm">
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="js/supabase.js"></script>
+    <input id="full_name" type="text" placeholder="Full Name">
 
-    <script>
-        async function checkUser() {
-            const { data } = await supabaseClient.auth.getUser();
+    <select id="gender">
+        <option value="">Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select>
 
-            if (!data.user) {
-                window.location.href = "login.html";
-            }
-        }
+    <input id="dob" type="date">
 
-        checkUser();
+    <input id="district" type="text" placeholder="District">
 
-        document.getElementById("logoutBtn").addEventListener("click", async () => {
-            await supabaseClient.auth.signOut();
-            window.location.href = "login.html";
-        });
-    </script>
+    <input id="education" type="text" placeholder="Education">
+
+    <input id="occupation" type="text" placeholder="Occupation">
+
+    <input id="phone" type="tel" placeholder="Phone Number">
+
+    <input id="height_cm" type="number" placeholder="Height (cm)">
+
+    <select id="marital_status">
+        <option value="">Marital Status</option>
+        <option>Never Married</option>
+        <option>Divorced</option>
+        <option>Widowed</option>
+    </select>
+
+    <input id="father_name" type="text" placeholder="Father's Name">
+
+    <input id="mother_name" type="text" placeholder="Mother's Name">
+
+    <textarea id="bio" placeholder="About Yourself"></textarea>
+
+    <button type="submit">Save Profile</button>
+
+</form>
+
+<button id="logoutBtn">Logout</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/dashboard.js"></script>
 
 </body>
 </html>
