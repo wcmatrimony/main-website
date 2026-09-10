@@ -1,3 +1,11 @@
+const supabaseUrl = "https://ziceiwtxuunwzpvmslki.supabase.co";
+const supabaseKey = "sb_publishable_rlkl8BDgVGN0meYPSezyPA_DspoM2Eh";
+
+const supabase = window.supabase.createClient(
+  supabaseUrl,
+  supabaseKey
+);
+
 // ---------- Sample data (replace with API calls to your backend) ----------
 const profiles = [
   { id: 1, name: "Ananya Rao",      age: 27, gender: "F", city: "Bengaluru", profession: "Software Engineer", community: "Hindu" },
