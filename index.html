@@ -1,1 +1,447 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><link rel='stylesheet' href='css/styles.css'><title>WC Matrimony</title></head><body><div class='nav'><b>WC Matrimony</b><a class='btn' href='register.html'>Register</a></div><section class='hero'><h1>Find Your God-Centered Life Partner</h1></section><div class='container'><div class='grid'><div class='card'>Verified Profiles</div><div class='card'>Privacy First</div><div class='card'>Secure Matching</div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WC Matrimony — Find someone who feels like home</title>
+
+<meta name="description"
+      content="WC Matrimony helps families connect through verified profiles, trust, and thoughtful matchmaking.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="wrap header-inner">
+
+        <a href="index.html" class="logo">
+            WC <span>Matrimony</span>
+        </a>
+
+        <nav class="main-nav" id="main-nav">
+
+            <a href="#browse">Browse Profiles</a>
+            <a href="#stories">Success Stories</a>
+            <a href="#how">How It Works</a>
+
+            <a href="login.html" class="nav-login">
+                Log In
+            </a>
+
+            <a href="register.html" class="btn btn-gold">
+                Join Free
+            </a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="shortlist-btn"
+                    id="shortlist-btn"
+                    aria-label="View shortlisted profiles">
+
+                <svg viewBox="0 0 24 24"
+                     width="20"
+                     height="20"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+
+                    <path d="M12 20.5s-7.5-4.6-10-9.2C.6 8 2 4.5 5.4 3.6c2.1-.5 4.2.4 5.6 2.3 1.4-1.9 3.5-2.8 5.6-2.3C20 4.5 21.4 8 20 11.3c-2.5 4.6-10 9.2-10 9.2z"/>
+                </svg>
+
+                <span id="shortlist-num">0</span>
+
+            </button>
+
+            <button class="nav-toggle"
+                    id="nav-toggle"
+                    aria-expanded="false"
+                    aria-controls="main-nav"
+                    aria-label="Open menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+<main id="top">
+
+    <section class="hero">
+
+        <div class="wrap hero-inner">
+
+            <div class="hero-text">
+
+                <h1>
+                    Find a life partner through trust, family and tradition.
+                </h1>
+
+                <p class="hero-sub">
+                    WC Matrimony helps families connect through verified profiles,
+                    thoughtful matching and a simple, respectful experience.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="register.html" class="btn btn-gold">
+                        Create Free Profile
+                    </a>
+
+                    <a href="#how" class="btn btn-outline">
+                        Learn More
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="wrap">
+
+            <form class="search-card" id="search-form">
+
+                <div class="field">
+
+                    <label for="looking-for">Looking for</label>
+
+                    <select id="looking-for">
+
+                        <option value="any">Bride or Groom</option>
+                        <option value="F">Bride</option>
+                        <option value="M">Groom</option>
+
+                    </select>
+
+                </div>
+
+                <div class="field field-age">
+
+                    <label>Age</label>
+
+                    <div class="age-inputs">
+
+                        <input type="number"
+                               id="age-from"
+                               min="18"
+                               max="70"
+                               placeholder="From">
+
+                        <span>–</span>
+
+                        <input type="number"
+                               id="age-to"
+                               min="18"
+                               max="70"
+                               placeholder="To">
+
+                    </div>
+
+                </div>
+
+                <div class="field">
+
+                    <label for="community">Community</label>
+
+                    <select id="community">
+
+                        <option value="any">Any Community</option>
+                        <option>Hindu</option>
+                        <option>Muslim</option>
+                        <option>Christian</option>
+                        <option>Sikh</option>
+                        <option>Jain</option>
+                        <option>Parsi</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+                <div class="field">
+
+                    <label for="location">City</label>
+
+                    <input type="text"
+                           id="location"
+                           placeholder="Any city">
+
+                </div>
+
+                <button type="submit" class="btn btn-gold search-btn">
+                    Search Profiles
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="trust-strip">
+
+        <div class="wrap trust-inner">
+
+            <div class="trust-item">
+                <strong>12,400+</strong>
+                <span>Active Profiles</span>
+            </div>
+
+            <div class="trust-item">
+                <strong>3,200+</strong>
+                <span>Success Stories</span>
+            </div>
+
+            <div class="trust-item">
+                <strong>96%</strong>
+                <span>Verified Profiles</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="profiles" id="browse">
+
+        <div class="wrap">
+
+            <div class="section-head">
+
+                <h2>Recently Joined</h2>
+
+                <p id="results-note">
+                    Discover newly verified members from our community.
+                </p>
+
+            </div>
+
+            <div class="profiles-grid" id="profiles-grid">
+                <!-- script.js will render approved profiles here later -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="how" id="how">
+
+        <div class="wrap">
+
+            <h2>How WC Matrimony Works</h2>
+
+            <ol class="steps">
+
+                <li>
+
+                    <span class="step-num">1</span>
+
+                    <div>
+
+                        <h3>Create Your Profile</h3>
+
+                        <p>
+                            Register with your details and complete your profile.
+                            Every new profile is reviewed before becoming visible.
+                        </p>
+
+                    </div>
+
+                </li>
+
+                <li>
+
+                    <span class="step-num">2</span>
+
+                    <div>
+
+                        <h3>Get Verified</h3>
+
+                        <p>
+                            Our team reviews each profile to help maintain trust
+                            and authenticity within the community.
+                        </p>
+
+                    </div>
+
+                </li>
+
+                <li>
+
+                    <span class="step-num">3</span>
+
+                    <div>
+
+                        <h3>Browse Matches</h3>
+
+                        <p>
+                            Search by age, city, education and other preferences
+                            to find meaningful matches.
+                        </p>
+
+                    </div>
+
+                </li>
+
+                <li>
+
+                    <span class="step-num">4</span>
+
+                    <div>
+
+                        <h3>Connect with Confidence</h3>
+
+                        <p>
+                            Express interest and involve your family whenever
+                            you're ready.
+                        </p>
+
+                    </div>
+
+                </li>
+
+            </ol>
+
+        </div>
+
+    </section>
+
+    <section class="stories" id="stories">
+
+        <div class="wrap">
+
+            <h2>Real Families, Real Beginnings</h2>
+
+            <div class="stories-grid">
+
+                <blockquote>
+
+                    <p>
+                        "We weren't looking for a checklist — we were looking
+                        for someone our families could sit down with."
+                    </p>
+
+                    <cite>Divya &amp; Karthik</cite>
+
+                </blockquote>
+
+                <blockquote>
+
+                    <p>
+                        "It felt less like an app and more like a respectful
+                        introduction."
+                    </p>
+
+                    <cite>Imran &amp; Zoya</cite>
+
+                </blockquote>
+
+                <blockquote>
+
+                    <p>
+                        "Three cities, two languages, one very long phone call.
+                        That's all it took."
+                    </p>
+
+                    <cite>Neha &amp; Aditya</cite>
+
+                </blockquote>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cta-band">
+
+        <div class="wrap cta-inner">
+
+            <h2>Your search starts with one profile.</h2>
+
+            <a href="register.html" class="btn btn-gold">
+                Create Your Free Profile
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="wrap footer-inner">
+
+        <div class="footer-brand">
+
+            <span class="logo">WC <span>Matrimony</span></span>
+
+            <p>
+                Thoughtful matchmaking built on trust, family and verified
+                connections.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <div>
+
+                <h4>Explore</h4>
+
+                <a href="#browse">Browse Profiles</a>
+                <a href="#stories">Success Stories</a>
+                <a href="#how">How It Works</a>
+
+            </div>
+
+            <div>
+
+                <h4>Account</h4>
+
+                <a href="login.html">Log In</a>
+                <a href="register.html">Join Free</a>
+
+            </div>
+
+            <div>
+
+                <h4>Support</h4>
+
+                <a href="#">Community Support</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="wrap footer-bottom">
+
+        <p>&copy; 2026 WC Matrimony. All rights reserved.</p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
