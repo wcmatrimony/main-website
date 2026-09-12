@@ -1,55 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile - WCMatrimony</title>
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#350816">
+<title>My Profile - WCMatrimony</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="dashboard-page">
 
-<h1>Complete Your Profile</h1>
+<div class="dashboard-shell">
 
-<form id="profileForm">
+    <div class="dashboard-top">
+        <a href="index.html" class="logo">WC <span>Matrimony</span></a>
+        <button id="logoutBtn" class="btn btn-outline btn-sm">Logout</button>
+    </div>
 
-    <input id="full_name" type="text" placeholder="Full Name">
+    <div class="dashboard-card">
 
-    <select id="gender">
-        <option value="">Gender</option>
-        <option>Male</option>
-        <option>Female</option>
-    </select>
+        <h1>Complete Your Profile</h1>
+        <p class="auth-sub">A complete, verified profile gets noticed first.</p>
 
-    <input id="dob" type="date">
+        <form id="profileForm" class="form-grid">
 
-    <input id="district" type="text" placeholder="District">
+            <div class="field">
+                <label for="full_name">Full Name</label>
+                <input id="full_name" type="text" placeholder="Full Name">
+            </div>
 
-    <input id="education" type="text" placeholder="Education">
+            <div class="field">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="">Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
 
-    <input id="occupation" type="text" placeholder="Occupation">
+            <div class="field">
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date">
+            </div>
 
-    <input id="phone" type="tel" placeholder="Phone Number">
+            <div class="field">
+                <label for="district">District</label>
+                <input id="district" type="text" placeholder="District">
+            </div>
 
-    <input id="height_cm" type="number" placeholder="Height (cm)">
+            <div class="field">
+                <label for="education">Education</label>
+                <input id="education" type="text" placeholder="Education">
+            </div>
 
-    <select id="marital_status">
-        <option value="">Marital Status</option>
-        <option>Never Married</option>
-        <option>Divorced</option>
-        <option>Widowed</option>
-    </select>
+            <div class="field">
+                <label for="occupation">Occupation</label>
+                <input id="occupation" type="text" placeholder="Occupation">
+            </div>
 
-    <input id="father_name" type="text" placeholder="Father's Name">
+            <div class="field">
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" placeholder="Phone Number">
+            </div>
 
-    <input id="mother_name" type="text" placeholder="Mother's Name">
+            <div class="field">
+                <label for="height_cm">Height (cm)</label>
+                <input id="height_cm" type="number" placeholder="Height (cm)">
+            </div>
 
-    <textarea id="bio" placeholder="About Yourself"></textarea>
+            <div class="field">
+                <label for="marital_status">Marital Status</label>
+                <select id="marital_status">
+                    <option value="">Marital Status</option>
+                    <option>Never Married</option>
+                    <option>Divorced</option>
+                    <option>Widowed</option>
+                </select>
+            </div>
 
-    <button type="submit">Save Profile</button>
+            <div class="field">
+                <label for="father_name">Father's Name</label>
+                <input id="father_name" type="text" placeholder="Father's Name">
+            </div>
 
-</form>
+            <div class="field">
+                <label for="mother_name">Mother's Name</label>
+                <input id="mother_name" type="text" placeholder="Mother's Name">
+            </div>
 
-<button id="logoutBtn">Logout</button>
+            <div class="field field-full">
+                <label for="bio">About Yourself</label>
+                <textarea id="bio" placeholder="About Yourself"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold field-full">Save Profile</button>
+
+        </form>
+
+    </div>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase.js"></script>
